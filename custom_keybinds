@@ -29,5 +29,8 @@ K - :call ShowDocumentation()<CR>
 " Apply the most preferred quickfix action to fix diagnostic on the current line
 <leader>qf - (coc-fix-current)
 
+" Find symbol of current document
+<space>o  :<C-u>CocList outline<cr>
+
 " Show commands
 <space>c - :<C-u>CocList commands<cr>

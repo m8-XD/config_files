@@ -101,7 +101,11 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 " Show commands
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 
-nnoremap <silent><nowait> <space>h :<C-u>e ~/.config/nvim/custom_keybinds<cr> 
+nnoremap <silent><nowait> <space>h :<C-u>e ~/.config/nvim/custom_keybinds<cr>
+
+" Find symbol of current document
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+
 " --- java keybindings END ---
 
 nmap <F8> :TagbarToggle<CR>
