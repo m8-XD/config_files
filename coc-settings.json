@@ -1,0 +1,5 @@
+{
+  "java.import.gradle.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+  "coc.preferences.formatOnSaveFiletypes": ["java"],
+  "coc.preferences.enableMessageDialog": true
+}

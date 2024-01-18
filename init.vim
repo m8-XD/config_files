@@ -8,6 +8,11 @@
 :set mouse=a
 :set guicursor=i:block 
 :set clipboard=unnamedplus
+:set colorcolumn=81
+
+:set statusline^=%{coc#status()}
+
+autocmd User CocStatusChange redrawstatus
 
 call plug#begin()
 
@@ -17,7 +22,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' } "nerdtree
 Plug 'williamboman/mason.nvim' "to install LSPs
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} "treesitter for syntax highliting
-Plug 'daltonmenezes/aura-theme', { 'rtp': 'packages/neovim' }
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
 set encoding=UTF-8
 
@@ -25,7 +30,7 @@ call plug#end()
 
 let mapleader=";"
 
-colorscheme aura-dark
+colorscheme moonfly
 
 :lua require("mason").setup()
 :luafile /home/m8/.config/nvim/setup.lua
