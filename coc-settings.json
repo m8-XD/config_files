@@ -1,5 +1,6 @@
 {
   "java.import.gradle.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
   "coc.preferences.formatOnSaveFiletypes": ["java"],
-  "coc.preferences.enableMessageDialog": true
+  "coc.preferences.enableMessageDialog": true,
+  "java.jdt.ls.vmargs" : "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable"
 }
