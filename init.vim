@@ -39,6 +39,7 @@ colorscheme moonfly
 au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=150}
 
 " --- nerdtree --
+let NERDTreeQuitOnOpen=1
 nnoremap <C-t> :NERDTreeToggle<CR>
 " --- nerdtree END ---
 
