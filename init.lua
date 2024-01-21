@@ -464,6 +464,21 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     -- Buffer local mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
+
+    local function quickfix()
+      local isFirst = true
+      vim.lsp.buf.code_action({
+        filter = function()
+          if isFirst then
+            isFirst = false
+            return true
+          end
+          return false
+        end,
+        apply = true
+      })
+    end
+
     local opts = { buffer = ev.buf }
     vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
@@ -482,6 +497,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<leader>f', function()
       vim.lsp.buf.format { async = true }
     end, opts)
+    vim.keymap.set('n', '<leader>qf', quickfix, opts)
   end,
 })
 
