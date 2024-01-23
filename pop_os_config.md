@@ -1,4 +1,4 @@
-pop_os config
+# pop_os config (paste to terminal)
 ```bash
 gsettings set org.gnome.mutter dynamic-workspaces false 
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 8
@@ -32,7 +32,12 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Super><Sh
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Super><Shift>9']" 
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super><Shift>0']"
 ```
-gnome extension
+# gnome extension
 ```
 https://extensions.gnome.org/extension/5669/compact-top-bar/
+```
+
+# add this to .bashrc
+```
+setopt no_auto_menu  # require an extra TAB press to open the completion menu
 ```
