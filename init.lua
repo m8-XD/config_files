@@ -237,10 +237,14 @@ vim.o.hlsearch = false
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.opt.colorcolumn = "81"
-vim.opt.guicursor = ""
 vim.o.cursorline = true
 -- Enable mouse mode
 vim.o.mouse = 'a'
+
+vim.o.guicursor = table.concat({
+  "i-ci:ver25-Cursor/lCursor-blinkwait1000-blinkon100-blinkoff100",
+  "r:hor50-Cursor/lCursor-blinkwait100-blinkon100-blinkoff100"
+}, ",")
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
