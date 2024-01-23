@@ -32,3 +32,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Super><Sh
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Super><Shift>9']" 
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super><Shift>0']"
 ```
+gnome extension
+```
+https://extensions.gnome.org/extension/5669/compact-top-bar/
+```
