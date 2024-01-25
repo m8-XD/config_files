@@ -146,14 +146,21 @@ require('lazy').setup({
     },
   },
 
+  -- Theme
+
   {
-    -- Theme inspired by Atom
-    'bluz71/vim-moonfly-colors',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'moonfly'
-    end,
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+    {
+      "baliestri/aura-theme",
+      lazy = false,
+      priority = 1000,
+      config = function(plugin)
+        vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
+        vim.cmd([[colorscheme aura-dark]])
+      end
+    }
   },
+
 
   {
     -- Set lualine as statusline
@@ -238,6 +245,8 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.opt.colorcolumn = "81"
 vim.o.cursorline = true
+vim.o.scrolloff = 3
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -486,7 +495,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     local opts = { buffer = ev.buf }
     vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-    vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+    vim.keymap.set('n', 'gr', "<cmd>Telescope lsp_references<CR>", opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
@@ -502,6 +511,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
       vim.lsp.buf.format { async = true }
     end, opts)
     vim.keymap.set('n', '<leader>qf', quickfix, opts)
+    vim.keymap.set('n', '<leader>/', '_i//<Esc>', opts)
+    vim.keymap.set('n', '<leader>err', 'iif err!=nill {<CR><CR>}<Esc>ki<tab>', opts)
   end,
 })
 
