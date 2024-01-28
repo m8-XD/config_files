@@ -6,6 +6,10 @@
 gtk-application-prefer-dark-theme=1
 ```
 
+```
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+```
+
 for monitor settings
 ```
 install arandr
