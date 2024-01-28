@@ -147,20 +147,14 @@ require('lazy').setup({
   },
 
   -- Theme
-
-  {
-    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     {
-      "baliestri/aura-theme",
-      lazy = false,
-      priority = 1000,
-      config = function(plugin)
-        vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
-        vim.cmd([[colorscheme aura-dark]])
+      "catppuccin/nvim",
+      name = "catppuccin",
+      priority = 100, 
+      config = function()
+        vim.cmd([[colorscheme catppuccin-mocha]])
       end
-    }
-  },
-
+      },
 
   {
     -- Set lualine as statusline
