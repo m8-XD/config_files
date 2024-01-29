@@ -41,3 +41,10 @@ https://extensions.gnome.org/extension/5669/compact-top-bar/
 sudo apt install xclip
 ```
 # install i3-dmenu-desktop and set shortcut
+
+# extension for top pannel
+```
+https://extensions.gnome.org/extension/3843/just-perfection/
+
+here move it to the bottom and set size to 24px
+```
