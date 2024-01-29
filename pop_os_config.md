@@ -36,7 +36,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Super><Sh
 https://extensions.gnome.org/extension/5669/compact-top-bar/
 ```
 
-# add this to .bashrc
+# to sync nvim clipboard and system
 ```
-setopt no_auto_menu  # require an extra TAB press to open the completion menu
+sudo apt install xclip
 ```
