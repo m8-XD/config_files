@@ -1,5 +1,10 @@
 =================custom part===========
 
+# to use this install 'light' (apt install light)
+# if not working run light -U 1 -v 3
+bindsym $mod+ctrl+k exec --no-startup-id light -A 1 # increase screen brightness
+bindsym $mod+ctrl+j exec --no-startup-id light -U 1 # decrease screen brightness
+
 # start a browser
 bindsym $mod+b exec firefox
 
