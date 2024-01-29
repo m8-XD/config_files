@@ -14,7 +14,7 @@ compinit
 # End of lines added by compinstall
 
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f$ '
+PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
 
 bindkey -v
 export KEYTIMEOUT=1
@@ -23,4 +23,8 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 alias dc=cd
+alias ls='ls --color'
 alias vim=nvim
+alias f='cd $(find . -type d -print | fzf)'
+alias fd='cd /mnt/storage/dev/ && cd $(find . -type d -print | fzf)'
+alias dev='cd /mnt/storage/dev/'
