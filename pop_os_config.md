@@ -40,3 +40,4 @@ https://extensions.gnome.org/extension/5669/compact-top-bar/
 ```
 sudo apt install xclip
 ```
+# install i3-dmenu-desktop and set shortcut
