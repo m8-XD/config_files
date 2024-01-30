@@ -26,5 +26,5 @@ alias dc=cd
 alias ls='ls --color'
 alias vim=nvim
 alias f='cd $(find . -type d -print | fzf)'
-alias fd='cd /mnt/storage/dev/ && cd $(find . -type d -print | fzf)'
+alias fd='cd $(find /mnt/storage/personal/ /mnt/storage/work -mindepth 1 -maxdepth 1 | fzf)'
 alias dev='cd /mnt/storage/dev/'
