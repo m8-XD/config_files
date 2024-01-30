@@ -148,11 +148,15 @@ require('lazy').setup({
 
   -- Theme
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "sainnhe/gruvbox-material",
+    name = "gruvbox",
     priority = 100,
     config = function()
-      vim.cmd([[colorscheme catppuccin-mocha]])
+      vim.cmd([[set background=dark]])
+      vim.cmd([[let g:gruvbox_material_background = 'hard']])
+      vim.cmd([[let g:gruvbox_material_foreground = 'mix']])
+      vim.cmd([[let g:gruvbox_material_statusline_style = 'mix']])
+      vim.cmd([[colorscheme gruvbox-material]])
     end
   },
 
@@ -163,7 +167,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'gruvbox-material',
         component_separators = '|',
         section_separators = '',
       },
