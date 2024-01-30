@@ -506,7 +506,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end, opts)
     vim.keymap.set('n', '<leader>qf', quickfix, opts)
     vim.keymap.set('n', '<leader>/', '_i//<Esc>', opts)
-    vim.keymap.set('n', '<leader>err', 'oif err!=nil {<CR><CR>}<Esc>ki<tab>', opts)
+    vim.keymap.set('n', '<leader>err', 'oif err != nil {<CR><CR>}<Esc>ki<tab>', opts)
   end,
 })
 
