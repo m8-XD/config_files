@@ -182,7 +182,15 @@ require('lazy').setup({
     main = 'ibl',
     opts = {},
   },
-
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    opts = {
+      direction = "horizontal",
+      size = 90,
+      open_mapping = [[;j]],
+    }
+  },
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
