@@ -16,11 +16,10 @@ compinit
 setopt PROMPT_SUBST
 PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
 
-bindkey -v
-export KEYTIMEOUT=1
-
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+if [ -z $TMUX ]; then; tmux; fi
 
 alias dc=cd
 alias ls='ls --color'
