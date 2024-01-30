@@ -48,3 +48,9 @@ https://extensions.gnome.org/extension/3843/just-perfection/
 
 here move it to the bottom and set size to 24px
 ```
+
+# set keybind to start tmux with kitty command:
+```
+kitty -e tmux
+```
+
