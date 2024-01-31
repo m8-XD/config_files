@@ -188,7 +188,7 @@ require('lazy').setup({
     opts = {
       direction = "horizontal",
       size = 90,
-      open_mapping = [[;j]],
+      open_mapping = [[<m-j>]],
     }
   },
   -- "gc" to comment visual regions/lines
