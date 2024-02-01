@@ -214,6 +214,11 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  -- Format on save
+  {
+    "lukas-reineke/lsp-format.nvim"
+  },
+
 }, {})
 
 -- [[ Setting options ]]
@@ -284,6 +289,9 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+-- Bind Esc to jj
+vim.keymap.set('i', 'jj', '<Esc>')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
@@ -510,6 +518,8 @@ require('which-key').register {
   ['<leader>t'] = { name = '[T]oggle', _ = 'which_key_ignore' },
   ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
 }
+
+
 -- register which-key VISUAL mode
 -- required for visual <leader>hs (hunk stage) to work
 require('which-key').register({
@@ -569,6 +579,10 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
+
+-- configure FORMAT on save
+require("lsp-format").setup {}
+require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
 
 -- [[ Configure nvim-cmp ]]
 -- See `:help cmp`
