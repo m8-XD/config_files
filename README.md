@@ -1,5 +1,5 @@
 # GO
 https://go.dev/wiki/Ubuntu
 
-#NVIM
+# NVIM
 https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable
