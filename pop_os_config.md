@@ -48,3 +48,19 @@ https://extensions.gnome.org/extension/3843/just-perfection/
 
 here move it to the bottom and set size to 24px
 ```
+# tweaks
+```
+fonts:
+  scalint factor: 1.20
+keyboard and mouse:
+  additional layout options:
+    alt and win behaviour:
+      swap
+    switch to additional layout:
+      win + space
+  window titlebar:
+    minimize - disable
+  windows:
+    window focus - focus on hover
+    raise windows when focused - enabled
+```
