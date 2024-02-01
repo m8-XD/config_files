@@ -40,7 +40,23 @@ https://extensions.gnome.org/extension/5669/compact-top-bar/
 ```
 sudo apt install xclip
 ```
-# install i3-dmenu-desktop and set shortcut
+# install everything
+```
+sudo apt install git kitty zsh tmux
+
+cd ~/Downloads 
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+mkdir ~/.local/share/font 
+mkdir ~/.local/share/font/JetBrains
+unzip JetBrainsMono.zip -d ~/.local/share/font/JetBrains
+
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
+sudo apt install neovim
+```
 
 # extension for top pannel
 ```
@@ -51,7 +67,7 @@ here move it to the bottom and set size to 24px
 # tweaks
 ```
 fonts:
-  scalint factor: 1.20
+  scaling factor: 1.20
 keyboard and mouse:
   additional layout options:
     alt and win behaviour:
@@ -63,4 +79,10 @@ keyboard and mouse:
   windows:
     window focus - focus on hover
     raise windows when focused - enabled
+```
+# shortcuts
+```
+super + shift + return - adjustment mode
+super + enter - kitty
+ctrl + shift + s - interractive screenshot
 ```
