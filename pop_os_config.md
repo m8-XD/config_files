@@ -112,9 +112,9 @@ sudo apt install git kitty zsh tmux ripgrep
 
 cd ~/Downloads 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
-mkdir ~/.local/share/font 
-mkdir ~/.local/share/font/JetBrains
-unzip JetBrainsMono.zip -d ~/.local/share/font/JetBrains
+mkdir ~/.local/share/fonts 
+mkdir ~/.local/share/fonts/JetBrains
+unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 
 sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
