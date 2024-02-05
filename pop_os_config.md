@@ -108,7 +108,7 @@ sudo apt install xclip
 ```
 # install everything
 ```
-sudo apt install git kitty zsh tmux repgrep
+sudo apt install git kitty zsh tmux ripgrep
 
 cd ~/Downloads 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
