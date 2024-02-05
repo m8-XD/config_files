@@ -108,7 +108,7 @@ sudo apt install xclip
 ```
 # install everything
 ```
-sudo apt install git kitty zsh tmux ripgrep
+sudo apt install git kitty zsh tmux ripgrep node gdu
 
 cd ~/Downloads 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
@@ -123,6 +123,14 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update
 sudo apt install neovim
 ```
+# NVIM setup
+```
+mv ~/.config/nvim ~/.config/nvim.bakmv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+```
+
 
 # extension for top pannel
 ```
