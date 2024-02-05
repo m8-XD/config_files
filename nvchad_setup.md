@@ -16,3 +16,13 @@ in custom/configs/lspconfig.lua
 ```
 local servers = {..., "gopls"}
 ```
+
+in custom/configs/lspconfig.lua
+```
+
+```
+
+ # theme
+ ```
+ayu_dark
+```
