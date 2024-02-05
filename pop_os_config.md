@@ -125,7 +125,8 @@ sudo apt install neovim
 ```
 # NVIM setup
 ```
-mv ~/.config/nvim ~/.config/nvim.bakmv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
