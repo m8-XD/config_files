@@ -1,7 +1,6 @@
 
 require('mason').setup()
 require('mason-lspconfig').setup()
-local lspconfig = require('lspconfig')
 
 local servers = {
   -- clangd = {},
@@ -97,14 +96,4 @@ cmp.setup {
     { name = 'luasnip' },
     { name = 'path' },
   },
-}
-
-lspconfig.gopls.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  settings = {
-    gopls = {
-      usePlaceholders = true,
-    }
-  }
 }
