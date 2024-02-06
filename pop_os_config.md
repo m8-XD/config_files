@@ -123,7 +123,7 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update
 sudo apt install neovim
 ```
-# NVIM setup
+# NVIM setup (i dont use it yet)
 ```
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak
