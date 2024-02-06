@@ -1,6 +1,7 @@
 
 require('mason').setup()
 require('mason-lspconfig').setup()
+local lspconfig = require('lspconfig')
 
 local servers = {
   -- clangd = {},
@@ -8,7 +9,7 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   -- html = { filetypes = { 'html', 'twig', 'hbs'} },
-  gopls = { },
+  gopls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
@@ -18,6 +19,7 @@ local servers = {
     },
   },
 }
+
 
 -- nvim-cmp supports additional completion capabilities, so broadcast that to servers
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -97,3 +99,12 @@ cmp.setup {
   },
 }
 
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    gopls = {
+      usePlaceholders = true,
+    }
+  }
+}
