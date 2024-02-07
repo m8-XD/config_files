@@ -1,14 +1,13 @@
-
 require('mason').setup()
 require('mason-lspconfig').setup()
+require('mason-nvim-lint').setup({
+    ensure_installed = {'golangci-lint'},
+    automatic_installation = false
+})
 
 local servers = {
-  -- clangd = {},
-  -- pyright = {},
-  -- rust_analyzer = {},
-  -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
   gopls = {},
+  golangci_lint_ls = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
