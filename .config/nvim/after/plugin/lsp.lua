@@ -1,7 +1,11 @@
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('mason-nvim-lint').setup({
-    ensure_installed = {'golangci-lint'},
+    ensure_installed = {
+        'golangci-lint',
+        'jsonlint',
+        'hadolint',
+    },
     automatic_installation = false
 })
 
