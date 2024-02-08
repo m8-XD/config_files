@@ -105,6 +105,8 @@ https://extensions.gnome.org/extension/5669/compact-top-bar/
 # to sync nvim clipboard and system
 ```
 sudo apt install xclip
+
+ choco install win32yank
 ```
 # install everything
 ```
