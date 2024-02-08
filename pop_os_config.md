@@ -110,7 +110,8 @@ sudo apt install xclip
 ```
 # install everything
 ```
-sudo apt install git kitty zsh tmux ripgrep node gdu
+sudo apt install git kitty zsh tmux ripgrep npm gdu gcc cargo
+npm install node
 
 cd ~/Downloads 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
