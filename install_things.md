@@ -2,7 +2,8 @@
 ```
 sudo apt install xclip
 
- choco install win32yank
+https://chocolatey.org/install
+choco install win32yank
 ```
 # install everything
 ```
