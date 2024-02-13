@@ -4,6 +4,6 @@ return {
     opts = {
       direction = "horizontal",
       size = 90,
-      open_mapping = [[<m-j>]],
+      open_mapping = [[<C-j>]],
     }
 }
