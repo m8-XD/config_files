@@ -1,4 +1,13 @@
+# GO
+https://go.dev/wiki/Ubuntu
 
+# NVIM
+https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable
+
+# font
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+
+# other
 ~/.config/gtk-3.0/settings.ini
 
 ```
@@ -19,9 +28,4 @@ to turn off the error bell
 download xorg-xset or xset and run
 ```
 xset b 0
-```
-
-install fzf
-```
-dnf install fzf
 ```
