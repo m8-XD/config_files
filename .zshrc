@@ -19,11 +19,13 @@ PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-if [ -z $TMUX ]; then; tmux; fi
+# if [ -z $TMUX ]; then; tmux; fi
 
 alias dc=cd
-alias ls='ls --color'
+alias ls='ls'
 alias vim=nvim
 # alias f='cd $(find . -type d -print | fzf)'
 alias f='cd $(find /mnt/storage/personal/ /mnt/storage/work -mindepth 1 -maxdepth 1 | fzf)'
 alias dev='cd /mnt/storage/dev/'
+alias n='neofetch'
+alias gitignore="echo '.*' > .gitignore"
