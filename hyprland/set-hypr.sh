@@ -65,11 +65,16 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     polkit-gnome python-requests starship \
     swappy grim slurp pamixer brightnessctl gvfs \
     bluez bluez-utils lxappearance xfce4-settings \
-    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland
+    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland \
+    tlp
 
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service...\n"
     sudo systemctl enable --now bluetooth.service
+    echo -e "Starting the sddm Service...\n"
+    sudo systemctl enable --now sddm
+    echo -e "Starting the tlp Service...\n"
+    sudo systemctl enable --now tlp 
     sleep 2
     
     # Clean out other portals
@@ -87,6 +92,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     cp -R waybar ~/.config/
     cp -R swaylock ~/.config/
     cp -R wofi ~/.config/
+    cp -R neofetch ~/.config/
     
     # Set some files as exacutable 
     chmod +x ~/.config/hypr/xdg-portal-hyprland
