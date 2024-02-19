@@ -59,14 +59,15 @@ fi
 ### Install all of the above pacakges ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
-    yay -S --noconfirm hyprland kitty waybar \
+    yay -S hyprland kitty waybar \
     swaybg swaylock-effects wofi wlogout mako thunar \
     ttf-jetbrains-mono-nerd noto-fonts-emoji \
     polkit-gnome python-requests starship \
     swappy grim slurp pamixer brightnessctl gvfs \
     bluez bluez-utils lxappearance xfce4-settings \
-    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland \
-    tlp
+    dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland-git \
+    xclip git fzf ripgrep tlp sddm-sugar-dark wl-clipboard imagemagick \
+    gnome-keyring tlp macchanger
 
     # Start the bluetooth service
     echo -e "Starting the Bluetooth Service...\n"
@@ -136,6 +137,7 @@ fi
 
 ### Script is done ###
 echo -e "Script had completed.\n"
+echo -e "If you want to enable macchanger go to ~/.config/hypr/hyprland.conf, line 22\n"
 echo -e "You can start Hyprland by typing Hyprland (note the capital H).\n"
 read -n1 -rep 'Would you like to start Hyprland now? (y,n)' HYP
 if [[ $HYP == "Y" || $HYP == "y" ]]; then

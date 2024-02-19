@@ -15,7 +15,7 @@ yay -S hyprland kitty waybar \
     bluez bluez-utils lxappearance xfce4-settings \
     dracula-gtk-theme dracula-icons-git xdg-desktop-portal-hyprland-git \
     xclip git fzf ripgrep tlp sddm-sugar-dark wl-clipboard imagemagick \
-    gnome-keyring
+    gnome-keyring tlp macchanger
 ```
 
 Or you can use the attached script "set-hypr" to install everything for you.
