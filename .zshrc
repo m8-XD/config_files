@@ -19,7 +19,7 @@ PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-if [ -z $TMUX ]; then; tmux; fi
+#if [ -z $TMUX ]; then; tmux; fi
 
 alias dc=cd
 alias ls='ls'
