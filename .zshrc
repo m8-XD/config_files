@@ -13,6 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+bindkey '^[[1;5C' forward-word                    # ctrl + ->
+bindkey '^[[1;5D' backward-word                   # ctrl + <-
+
+
 setopt PROMPT_SUBST
 PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
 
