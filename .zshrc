@@ -34,3 +34,4 @@ alias dev='cd /mnt/storage/dev/'
 alias scripts="cd /mnt/storage/scripts"
 alias n='neofetch'
 alias gitignore="echo '.*' > .gitignore"
+alias c=gcc -std=c99
