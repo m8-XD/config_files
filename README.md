@@ -1,6 +1,9 @@
 # for arch-linux installation go 
 [here](https://github.com/m8-XD/config_files/blob/main/arch.md)
 
+# for parrot-os installation go 
+[here](https://github.com/m8-XD/config_files/blob/main/parrot_os.md)
+
 # for pop_os! installation go
 [here](https://github.com/m8-XD/config_files/blob/main/pop_os_config.md)
 
