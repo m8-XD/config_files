@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# put to /usr/local/bin/tmux_sessions
-
 attach_session() {
     session_name="$1"
     if [ "$TMUX" = "" ]; then
@@ -36,28 +34,13 @@ kill_session() {
 
     # Kill the session if it exists
     tmux kill-session -t "$session_name" 2>/dev/null
-
-    # Check if we are inside the session
-    if [ "$TMUX" = "" ]; then
-        # If not inside the session, exit
-        echo "Not inside the session $session_name"
-        exit 1
-    else
-        # If inside the session, prompt for restart
-        read -p "Do you want to restart the session? [y/n]: " choice
-        case "$choice" in
-            y|Y ) tmux new-session -d -s "$session_name"
-		    attach_session "$session_name";;
-            * ) exit;;
-        esac
-    fi
 }
 
 # Main script
 if [ "$1" = "a" ]; then
     # If 'a' argument is provided, create or attach session
     create_or_attach_session "$2"
-elif [ "$1" = "r" ]; then
+elif [ "$1" = "k" ]; then
     # If 'r' argument is provided, kill session
     kill_session "$2"
 elif [ "$1" = "l" ]; then
@@ -66,7 +49,7 @@ else
     # If no valid arguments provided, display usage message
     echo "Usage: $0 [a|r|l] session_name"
     echo "  a: create or attach to session"
-    echo "  r: kill session (optionally restart if inside)"
+    echo "  k: kill session (optionally restart if inside)"
     echo "  l: list all sessions"
 fi
 

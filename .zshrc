@@ -25,7 +25,7 @@ export VISUAL="nvim"
 
 alias ta="tmux_sessions a"
 alias tl="tmux_sessions l"
-alias trs="tmux_sessions r"
+alias tk="tmux_sessions k"
 alias dc=cd
 alias ls='ls'
 alias vim=nvim
