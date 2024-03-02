@@ -25,7 +25,7 @@ export VISUAL="nvim"
 
 alias ta="tmux_sessions a"
 alias tl="tmux_sessions l"
-alias tr="tmux_sessions r"
+alias trs="tmux_sessions r"
 alias dc=cd
 alias ls='ls'
 alias vim=nvim
@@ -35,3 +35,5 @@ alias scripts="cd /mnt/storage/scripts"
 alias n='neofetch'
 alias gitignore="echo '.*' > .gitignore"
 alias c=gcc -std=c99
+
+if [ -z $TMUX ]; then; tmux_sessions a code; fi
