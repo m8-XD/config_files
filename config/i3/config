@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -19,17 +19,16 @@ font pango:monospace 12px
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+#add second layout (ru)
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option 'grp:win_space_toggle'"
+
+# remove windows titlebar
 for_window [class="^.*"] border pixel 2
                           # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
+# run network manager applet on startup
 exec --no-startup-id nm-applet
 # keybinding to lock screen
 bindsym Control+Mod1+l exec "i3lock -c 000000"
@@ -37,6 +36,9 @@ bindsym Control+Mod1+l exec "i3lock -c 000000"
 exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# configure mouse
+# https://wiki.archlinux.org/title/Mouse_acceleration
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
