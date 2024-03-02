@@ -31,9 +31,10 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 # font, it doesn’t scale on retina/hidpi displays.
 
 exec --no-startup-id nm-applet
-
-tiling_drag modifier titlebar
-
+# keybinding to lock screen
+bindsym Control+Mod1+l exec "i3lock -c 000000"
+# auto lock the screen
+exec "xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\""
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -213,9 +214,10 @@ bar {
 bindsym XF86AudioRaiseVolume exec "amixer set Master 5%+ unmute"
 bindsym XF86AudioLowerVolume exec "amixer set Master 5%- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
-#
+
 # # Sreen brightness controls
+# for brightnessctl
+# go to /sys/class/backlight, then go ls -l and go to linked  dirrectory
+# then add '666' permissions to brighness file (and may be actual_brightness) [chmod 666 brightness]
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%# increase screen brightness
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%- # decrease screen brightness
-
-# Suspend
