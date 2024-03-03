@@ -116,8 +116,6 @@ fonts:
   scaling factor: 1.20
 keyboard and mouse:
   additional layout options:
-    alt and win behaviour:
-      swap
     switch to additional layout:
       win + space
   window titlebar:
@@ -128,7 +126,7 @@ keyboard and mouse:
 ```
 # shortcuts
 ```
-super + shift + return - adjustment mode
-super + enter - kitty
+alt + shift + return - adjustment mode
+alt + enter - kitty
 ctrl + shift + s - interractive screenshot
 ```
