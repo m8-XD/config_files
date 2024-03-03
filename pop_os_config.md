@@ -97,19 +97,26 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>m']"
 gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "['<Alt>']"
 
 ```
-# gnome extension
+# gnome extensions
+## transparent top panel
 ```
 https://extensions.gnome.org/extension/5669/compact-top-bar/
 ```
 
-
-
-# extension for top pannel
+## top pannel customisation
 ```
 https://extensions.gnome.org/extension/3843/just-perfection/
 
 here move it to the bottom and set size to 24px
 ```
+
+## hide titlebar for non gtk apps
+```
+https://extensions.gnome.org/extension/1732/gtk-title-bar/
+
+in settings set to always
+```
+
 # tweaks
 ```
 fonts:
