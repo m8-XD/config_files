@@ -63,6 +63,10 @@ gaps outer 3
 # window title alignment
 #title_align center
 
+# add second layout (ru)
+exec "setxkbmap -layout us,ru"
+exec "setxkbmap -option 'grp:win_space_toggle'"
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
