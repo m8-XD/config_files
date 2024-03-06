@@ -23,6 +23,8 @@ PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+alias templ="~/go/bin/templ"
+
 alias ta="tmux_sessions a"
 alias tl="tmux_sessions l"
 alias tk="tmux_sessions k"
