@@ -310,8 +310,10 @@ bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1:"
-set $ws2 "2:󰨞"
-set $ws3 "3:"
+# set $ws2 "2:󰨞"
+# set $ws3 "3:"
+set $ws2 "2:"
+set $ws3 "3:󰨞"
 set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6"
@@ -331,8 +333,10 @@ set $ws10 "10"
 
 # bind program to workspace and focus to them on startup:
 assign [class="(?i)firefox"] $ws1
-assign [class="(?i)code"] $ws2
-assign [class="kitty"] $ws3
+# assign [class="(?i)code"] $ws2
+# assign [class="kitty"] $ws3
+assign [class="kitty"] $ws2
+assign [class="(?i)code"] $ws3
 assign [class="Thunar"] $ws4
 assign [class="TelegramDesktop"] $ws5
 
@@ -417,6 +421,8 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 # https://wiki.archlinux.org/title/Session_lock#xautolock
 #exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
+# swap esc and capslock
+# exec --no-startup-id setxkbmap -option caps:swapescape
 
 # xscreensaver
 # https://www.jwz.org/xscreensaver
@@ -502,12 +508,16 @@ set $grey		#b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
 
+#colors enable if you wish
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
-client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+# ENABLE THIS
+###############
+# client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
+# client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
+# client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
+# client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+###############
 
 ############################################
 # bar settings (input comes from i3blocks) #
@@ -531,16 +541,19 @@ bar {
 strip_workspace_numbers yes
 ##strip_workspace_name no
 
-		    colors {
-		    separator          $purple
-		    background         $darkgrey
-		    statusline         $white
+# colors enable if you want to look cool
+#########################################
+		    # colors {
+		    # separator          $purple
+		    # background         $darkgrey
+		    # statusline         $white
 #                          		border 		        bg		txt		indicator
-		focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
-		active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
-		inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
-		urgent_workspace	$urgentred	    	$urgentred	$white		$purple
-	}
+		# focused_workspace	$mediumgrey	   	$grey		$darkgrey	$purple
+		# active_workspace	$lightblue      	$mediumgrey	$darkgrey	$purple
+		# inactive_workspace	$darkgrey   		$darkgrey	$grey		$purple
+		# urgent_workspace	$urgentred	    	$urgentred	$white		$purple
+	# }
+#########################################
 }
 
 # you can add different bars for multidisplay setups on each display:
