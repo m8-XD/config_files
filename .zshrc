@@ -26,6 +26,7 @@ export VISUAL="nvim"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+alias templg="cd templ && templ generate && cd .."
 alias ta="tmux_sessions a"
 alias tl="tmux_sessions l"
 alias tk="tmux_sessions k"
