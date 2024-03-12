@@ -1,0 +1,29 @@
+let mapleader=" "
+
+""" Sets BEGIN
+set scrolloff=5
+set incsearch
+set clipboard^=unnamedplus,unnamed
+""" Sets End
+
+""" Plugins BEGIN
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+""" Plugins END
+
+""" Maps BEGIN
+map <leader>r <Action>(RenameElement)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+
+" Trident mappings
+map <leader>ja <Action>(TridentAppend)
+map <leader>je <Action>(TridentToggleQuickMenu)
+
+""" Maps END
