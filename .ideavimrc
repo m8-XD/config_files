@@ -25,5 +25,10 @@ map [d <Action>(GotoPreviousError)
 " Trident mappings
 map <leader>ja <Action>(TridentAppend)
 map <leader>je <Action>(TridentToggleQuickMenu)
+map <leader>js <Action>(TridentSelect1)
+map <leader>jd <Action>(TridentSelect2)
+map <leader>jf <Action>(TridentSelect3)
+map <leader>jg <Action>(TridentSelect4)
+map <leader>jh <Action>(TridentSelect5)
 
 """ Maps END
