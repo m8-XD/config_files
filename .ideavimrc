@@ -31,4 +31,6 @@ map <leader>jf <Action>(TridentSelect3)
 map <leader>jg <Action>(TridentSelect4)
 map <leader>jh <Action>(TridentSelect5)
 
+map , <Action>(TridentSelectPrev)
+map . <Action>(TridentSelectNext)
 """ Maps END
