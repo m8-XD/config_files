@@ -106,13 +106,6 @@ https://extensions.gnome.org/extension/3843/just-perfection/
 here move it to the bottom and set size to 24px
 ```
 
-## hide titlebar for non gtk apps
-```
-https://extensions.gnome.org/extension/1732/gtk-title-bar/
-
-in settings set to always
-```
-
 # tweaks
 ```
 fonts:
@@ -121,15 +114,10 @@ keyboard and mouse:
   additional layout options:
     switch to additional layout:
       win + space
-  window titlebar:
-    minimize - disable
-  windows:
-    window focus - focus on hover
-    raise windows when focused - enabled
 ```
 # shortcuts
 ```
 alt + shift + return - adjustment mode
-alt + enter - kitty
+alt + t - kitty
 ctrl + shift + s - interractive screenshot
 ```
