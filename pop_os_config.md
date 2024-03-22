@@ -98,10 +98,6 @@ gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "['<Alt>']"
 
 ```
 # gnome extensions
-## transparent top panel
-```
-https://extensions.gnome.org/extension/5669/compact-top-bar/
-```
 
 ## top pannel customisation
 ```
