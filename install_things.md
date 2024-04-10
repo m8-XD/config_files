@@ -8,6 +8,8 @@ choco install win32yank
 # install everything
 ```
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep spectacle
+# change jdk when new cool thingd come out
+sudo apt install openjdk-21-jdk docker docker-compose maven gradle
 npm install node
 
 cd ~/Downloads 
