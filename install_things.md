@@ -7,7 +7,7 @@ choco install win32yank
 ```
 # install everything
 ```
-sudo apt install git kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep spectacle
+sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep spectacle
 npm install node
 
 cd ~/Downloads 
