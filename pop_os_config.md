@@ -118,6 +118,6 @@ keyboard and mouse:
 # shortcuts
 ```
 alt + shift + return - adjustment mode
-alt + t - kitty
+alt + enter - kitty
 ctrl + shift + s - interractive screenshot
 ```
