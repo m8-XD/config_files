@@ -38,6 +38,7 @@ alias f='cd $(find ~/personal/ ~/work -mindepth 1 -maxdepth 1 | fzf)'
 alias scripts="cd /mnt/storage/scripts"
 alias n='neofetch'
 alias gitignore="echo '.*' > .gitignore"
+alias gs="git status"
 alias c=gcc -std=c99
 
 if [ -z $TMUX ]; then; tmux_sessions a code; fi
