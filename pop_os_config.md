@@ -96,6 +96,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Primar
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>m']"
 gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "['<Alt>']"
 
+light -L
+
+echo sudo chmod 777 <your monitor>
+
 ```
 # gnome extensions
 
@@ -103,7 +107,7 @@ gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "['<Alt>']"
 ```
 https://extensions.gnome.org/extension/3843/just-perfection/
 
-here move it to the bottom and set size to 24px
+here set size to 24px
 ```
 
 # tweaks
