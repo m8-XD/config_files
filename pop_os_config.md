@@ -95,11 +95,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Alt>
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Primary><Alt>Up', '<Primary><Alt>KP_Up', '<Primary><Alt>k']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Alt>m']"
 gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "['<Alt>']"
-
-light -L
-
-echo sudo chmod 777 <your monitor>
-
 ```
 # gnome extensions
 
@@ -107,7 +102,9 @@ echo sudo chmod 777 <your monitor>
 ```
 https://extensions.gnome.org/extension/3843/just-perfection/
 
-here set size to 24px
+here set size : 24px
+Panel Button padding Size : 2px
+Panel Indicator padding Size : 0px
 ```
 
 # tweaks
