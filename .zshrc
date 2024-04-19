@@ -40,5 +40,9 @@ alias n='neofetch'
 alias gitignore="echo '.*' > .gitignore"
 alias gs="git status"
 alias c=gcc -std=c99
+alias dark='gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark \
+&& gsettings set org.gnome.desktop.interface color-scheme prefer-dark'
+alias light='gsettings set org.gnome.desktop.interface gtk-theme Adwaita \
+&& gsettings set org.gnome.desktop.interface color-scheme prefer-light'
 
 if [ -z $TMUX ]; then; tmux_sessions a code; fi
