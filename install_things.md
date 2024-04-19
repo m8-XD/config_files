@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install gh
 ## wsl end
 
-sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep spectacle gnome-keyring
+sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep spectacle gnome-keyring wl-clipboard
 # change jdk when new cool thingd come out
 sudo apt install openjdk-21-jdk docker docker-compose maven gradle
 npm install node
@@ -41,7 +41,7 @@ ttf-jetbrains-mono-nerd noto-fonts-emoji polkit-gnome \
 grim slurp light lxappearance dracula-gtk-theme dracula-icons-git \
 xclip git fzf ripgrep tlp gnome-keyring zsh tmux npm gcc \
 cargo spectacle java go maven gradle docker docker-compose \
-github-cli
+github-cli wl-clipboard
 ```
 
 # NVIM setup (i dont use it yet)
