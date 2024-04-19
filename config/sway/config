@@ -200,6 +200,7 @@ bindsym $mod+r mode "resize"
 bar {
     position bottom
 
+    height 18
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     #status_command while date +'%Y-%m-%d %l:%M %p'; do sleep 1; done
@@ -214,7 +215,7 @@ bar {
     }
 }
 
-default_border none
+default_border pixel 1
 
 include /etc/sway/config.d/*
 
