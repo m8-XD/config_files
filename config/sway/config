@@ -233,6 +233,12 @@ input type:touchpad {
     natural_scroll enabled
 }
 
+# if doesnt work
+# 'sudo chmod 777 /sys/class/backlight/amdgpu_bl1/brightness'
+# if still doesnt work
+# 'light -U 10 -v 3'
+# and check for filename
+
 # Brightness
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
