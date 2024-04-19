@@ -18,7 +18,7 @@ bindkey '^[[1;5D' backward-word                   # ctrl + <-
 
 
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f> '
+PROMPT='%F{blue}%1~%f %F{red}${vcs_info_msg_0_}%f%F{green}→%f '
 
 export EDITOR="nvim"
 export VISUAL="nvim"
