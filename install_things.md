@@ -14,7 +14,7 @@ sudo apt update
 sudo apt install gh
 ## wsl end
 
-sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep spectacle gnome-keyring wl-clipboard
+sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep gnome-keyring wl-clipboard light
 # change jdk when new cool thingd come out
 sudo apt install openjdk-21-jdk docker docker-compose maven gradle
 npm install node
