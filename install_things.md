@@ -17,6 +17,10 @@ sudo apt install gh
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf ripgrep gnome-keyring wl-clipboard light
 # change jdk when new cool thingd come out
 sudo apt install openjdk-21-jdk docker docker-compose maven gradle
+
+# for sway
+sudo apt install dmenu wmenu
+
 npm install node
 
 cd ~/Downloads 
