@@ -15,7 +15,7 @@ sudo apt install gh
 ## wsl end
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard light tlp
+ripgrep gnome-keyring wl-clipboard light tlp pavucontrol
 
 sudo systemctl enable tlp
 sudo tlp start
@@ -24,7 +24,7 @@ sudo tlp start
 sudo apt install openjdk-21-jdk docker docker-compose maven gradle
 
 # for sway
-sudo apt install dmenu wmenu
+sudo apt install dmenu
 
 npm install node
 
