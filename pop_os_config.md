@@ -116,10 +116,6 @@ keyboard and mouse:
     switch to additional layout:
       win + space
 ```
-# settings
-```
-Settings -> Accessibility -> Enable Animations (disable)
-```
 # shortcuts
 ```
 alt + shift + return - adjustment mode
