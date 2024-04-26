@@ -121,4 +121,5 @@ keyboard and mouse:
 alt + shift + return - adjustment mode
 alt + enter - kitty
 ctrl + shift + s - interractive screenshot
+alt + d - dmenu_run
 ```

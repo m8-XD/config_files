@@ -15,8 +15,10 @@ sudo apt install gh
 ## wsl end
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard light tlp pavucontrol grim slurp \
-feh
+ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
+feh bat
+
+sudo ln -s /usr/bin/batcat /usr/bin/bat
 
 sudo systemctl enable tlp
 sudo tlp start
