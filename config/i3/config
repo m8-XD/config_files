@@ -168,8 +168,9 @@ bar {
 # ------------------------------------------
 # CUSTOM KEYS START
 # ------------------------------------------
-exec --no-startup-id nm-applet
+exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id picom --backend glx -b
+exec --no-startup-id nm-applet
 
 bindsym $mod+Escape exec i3lock -c 000000
 
