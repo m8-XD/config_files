@@ -8,12 +8,11 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 1
 }
 
 order += "disk /"
 order += "battery all"
-order += "load"
 order += "tztime local"
 
 battery all {
@@ -24,10 +23,6 @@ tztime local {
         format = "%Y-%m-%d %H:%M:%S"
 }
 
-load {
-        format = "%1min"
-}
-
 disk "/" {
-        format = "%avail"
+        format = "(windows RAM usage) %avail"
 }
