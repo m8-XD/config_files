@@ -17,3 +17,5 @@ download xorg-xset or xset and run
 ```
 xset b 0
 ```
+install picom bruh to avoid screen tearing
+https://github.com/yshui/picom
