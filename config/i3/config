@@ -179,9 +179,9 @@ bindsym $mod+shift+z exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png \
         --select > ~/Pictures/screenshot_$NOW.png && \
         xclip -selection clip -t image/png ~/Pictures/screenshot_$NOW.png
 
-bindsym $mod+Shift+s exec chmod +x ~/.config/i3/bin/mirrormonitor && bash ~/.config/i3/bin/mirrormonitor
-bindsym $mod+Shift+d exec chmod +x ~/.config/i3/bin/duomonitor && bash ~/.config/i3/bin/duomonitor
-bindsym $mod+Shift+a exec chmod +x ~/.config/i3/bin/primaryonly && .config/i3/bin/primaryonly
+bindsym $mod+Shift+s exec --no-startup-id chmod +x ~/.config/i3/bin/mirrormonitor && bash ~/.config/i3/bin/mirrormonitor
+bindsym $mod+Shift+d exec --no-startup-id chmod +x ~/.config/i3/bin/duomonitor && bash ~/.config/i3/bin/duomonitor
+bindsym $mod+Shift+a exec --no-startup-id chmod +x ~/.config/i3/bin/primaryonly && .config/i3/bin/primaryonly
 
 # FKeys
 # Pulse Audio controls
