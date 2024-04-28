@@ -37,13 +37,8 @@ mkdir ~/.local/share/fonts
 mkdir ~/.local/share/fonts/JetBrains
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 
-sudo add-apt-repository ppa:longsleep/golang-backports
-sudo apt update
-sudo apt install golang-go
-
-
-
-
+# add this to your ~/.profile
+export PATH=$PATH:/usr/local/go/bin
 ```
 
 # arch section
