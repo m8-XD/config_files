@@ -93,6 +93,7 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -168,9 +169,13 @@ bar {
 # ------------------------------------------
 # CUSTOM KEYS START
 # ------------------------------------------
+exec --no-startup-id chmod 777 ~/.config/i3/bin/ -R
 exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id picom --backend glx -b
 exec --no-startup-id nm-applet
+exec --no-startup-id ~/.config/i3/bin/ibusstop
+exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
+
 
 bindsym $mod+Escape exec i3lock -c 000000
 
@@ -197,7 +202,6 @@ bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
 bindsym $mod+Shift+period exec systemctl suspend
 
 exec_always --no-startup-id feh --bg-scale ~/.config/i3/wall.jpg
-exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
 
 # to see all monitors run 'xrandr'
 exec_always --no-startup-id xrandr --output eDP --set TearFree on

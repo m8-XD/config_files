@@ -1,0 +1,6 @@
+#! /bin/bash
+while [[ $(ibus address) != "(null)" ]]
+do 
+    ibus exit
+    echo 1
+done

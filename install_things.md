@@ -16,7 +16,7 @@ sudo apt install gh
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
 ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim lxappearance make
+feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 
