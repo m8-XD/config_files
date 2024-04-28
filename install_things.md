@@ -16,7 +16,7 @@ sudo apt install gh
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
 ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim
+feh bat picom pavucontrol gimp maim lxappearance make
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 
@@ -40,9 +40,9 @@ unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
 sudo apt install golang-go
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt update
-sudo apt install neovim
+
+
+
 
 ```
 
