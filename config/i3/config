@@ -207,3 +207,7 @@ exec_always --no-startup-id feh --bg-scale ~/.config/i3/wall.jpg
 # to see all monitors run 'xrandr'
 exec_always --no-startup-id xrandr --output eDP --set TearFree on
 exec_always --no-startup-id xrandr --output HDMI-A-0 --set TearFree on
+
+# run google calendar on starup
+assign [class="WebApp-Calendar2211" instance="calendar.google.com__calendar_u_1"] 9
+exec google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
