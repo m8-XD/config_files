@@ -1,14 +1,12 @@
-lxappearance
-brightnessctl
-i3lock 
-xautolock
+lxappearance brightnessctl i3lock xautolock
 
-install picom bruh to avoid screen tearing
+install picom to avoid screen tearing
 https://github.com/yshui/picom
 
 ```
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
+sudo usermod -aG video ${USER}
 ```
 
 for monitor settings
