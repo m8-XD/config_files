@@ -37,6 +37,8 @@ mkdir ~/.local/share/fonts
 mkdir ~/.local/share/fonts/JetBrains
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 
+curl https://sh.rustup.rs -sSf | sh
+
 # add this to your ~/.profile
 export PATH=$PATH:/usr/local/go/bin
 ```
