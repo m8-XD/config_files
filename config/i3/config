@@ -18,7 +18,7 @@ font pango:monospace 15px
 # GET DEM BORDERS OUT OF HEREc:w
 #
 # Thanks Childz
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
                           # class                 border  backgr. text    indicator child_border
 for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4   #285577
 
@@ -35,10 +35,10 @@ for_window [class="^.*"] client.focused          #77dd77 #285577 #ffffff #2e9ef4
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
+# tiling_drag modifier
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec --no-startup-id kitty
 
 # kill focused window
 # bindsym $mod+space exec "/home/theprimeagen/dotfiles/awesome-streamerrc/ThePrimeagen/tmux2"
@@ -130,7 +130,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -178,10 +178,10 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
 
 
-bindsym $mod+Escape exec i3lock -c 000000
+bindsym $mod+Escape exec --no-startup-id i3lock -c 000000
 
 # screenshot
-bindsym $mod+shift+z exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png \
+bindsym $mod+shift+z exec --no-startup-id NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png \
         --select > ~/Pictures/screenshot_$NOW.png && \
         xclip -selection clip -t image/png ~/Pictures/screenshot_$NOW.png
 
@@ -210,4 +210,4 @@ exec_always --no-startup-id xrandr --output HDMI-A-0 --set TearFree on
 
 # run google calendar on starup
 assign [class="WebApp-Calendar2211" instance="calendar.google.com__calendar_u_1"] 9
-exec google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
+exec --no-startup-id google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
