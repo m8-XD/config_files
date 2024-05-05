@@ -24,6 +24,10 @@ mkdir ~/.local/share/fonts/JetBrains
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 rm JetBrainsMono.zip
 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+apt install ./google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+
 curl https://sh.rustup.rs -sSf | sh
 
 # add this to your ~/.profile
