@@ -173,8 +173,6 @@ exec --no-startup-id chmod 777 ~/.config/i3/bin/ -R
 exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id picom --backend glx -b
 exec --no-startup-id nm-applet
-# uncomment it if you have ibus running on startup (dont uncomment if you dont have ibus (perfomance things))
-# exec --no-startup-id ~/.config/i3/bin/ibusstop
 exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
 
 
