@@ -50,7 +50,6 @@ cd ~/.config
 git clone https://github.com/ring0-rootkit/nvim
 
 sudo apt remove libreoffice-*
-sudo apt remove ibus
 sudo apt upgrade
 sudo apt full-upgrade
 sudo apt autoremove
