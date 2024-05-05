@@ -44,3 +44,5 @@ chmod 777 ~/.config/i3/bin/*
 chmod +x ./stream/install.sh
 sudo ./stream/install.sh
 
+light -U 10 -v 3
+echo pls run chmod 777 {file stated above}
