@@ -7,10 +7,10 @@ sudo cp deb.sources.list /etc/apt/sources.list
 sudo apt update
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring gdm3 wl-clipboard xclip light tlp pavucontrol grim slurp \
+ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
 feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl \
 ninja-build gettext cmake unzip build-essential lxappearance i3lock xautolock \
-golang firefox nautilus
+golang firefox nautilus i3
 
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
@@ -44,12 +44,26 @@ cp .zshrc ~/
 
 chmod 777 ~/.config/i3/bin/*
 
-chmod +x ./stream/install.sh
-sudo ./stream/install.sh
-
 sudo usermod -aG video ${USER}
 
-sudo apt purge libreoffice-*
+cd ~/.config
+git clone https://github.com/ring0-rootkit/nvim
+
+sudo apt remove libreoffice-*
+sudo apt remove ibus
 sudo apt upgrade
 sudo apt full-upgrade
 sudo apt autoremove
+
+#----add here things you want to run after all the newest packages are installed-----
+
+chmod +x ./stream/install.sh
+sudo ./stream/install.sh
+
+cd ~/
+mkdir personal
+cd personal
+git clone https://github.com/neovim/neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+
