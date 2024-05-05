@@ -5,10 +5,11 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp deb.sources.list /etc/apt/sources.list 
 
 sudo apt update
+sudo apt upgrade
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
 ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit
+feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 
@@ -16,7 +17,7 @@ sudo systemctl enable tlp
 sudo tlp start
 
 # change jdk when new cool thingd come out
-sudo apt install openjdk-21-jdk docker docker-compose maven gradle
+sudo apt install openjdk-21-jdk docker-compose maven gradle
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 mkdir ~/.local/share/fonts 
@@ -25,7 +26,7 @@ unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 rm JetBrainsMono.zip
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install ./google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
 curl https://sh.rustup.rs -sSf | sh
