@@ -5,11 +5,13 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp deb.sources.list /etc/apt/sources.list 
 
 sudo apt update
-sudo apt upgrade
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl
+ripgrep gnome-keyring gdm3 wl-clipboard xclip light tlp pavucontrol grim slurp \
+feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl \
+ninja-build gettext cmake unzip build-essential lxappearance i3lock xautolock \
+golang firefox nautilus
+
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 
@@ -45,5 +47,9 @@ chmod 777 ~/.config/i3/bin/*
 chmod +x ./stream/install.sh
 sudo ./stream/install.sh
 
-light -U 10 -v 3
-echo pls run chmod 777 {file stated above}
+sudo usermod -aG video ${USER}
+
+sudo apt purge libreoffice-*
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt autoremove
