@@ -1,5 +1,7 @@
 #! /bin/bash
 
+curdir=$(pwd)
+
 # Change Debian to SID Branch
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp deb.sources.list /etc/apt/sources.list 
@@ -50,12 +52,15 @@ cd ~/.config
 git clone https://github.com/ring0-rootkit/nvim
 
 sudo apt remove libreoffice-*
+sudo apt remove gnome-games
+sudo apt remove ibus
 sudo apt upgrade
 sudo apt full-upgrade
 sudo apt autoremove
 
 #----add here things you want to run after all the newest packages are installed-----
 
+cd $curdir
 chmod +x ./stream/install.sh
 sudo ./stream/install.sh
 
@@ -63,6 +68,7 @@ cd ~/
 mkdir personal
 cd personal
 git clone https://github.com/neovim/neovim
+cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
