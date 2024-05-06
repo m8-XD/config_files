@@ -45,5 +45,7 @@ alias darktheme='gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dar
 alias lighttheme='gsettings set org.gnome.desktop.interface gtk-theme Adwaita \
 && gsettings set org.gnome.desktop.interface color-scheme prefer-light'
 alias ts="ts-node"
+alias t5="sowon 300"
+alias t15="sowon 900"
 
 if [ -z $TMUX ]; then; tmux_sessions a code; fi
