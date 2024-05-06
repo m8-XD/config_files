@@ -335,6 +335,7 @@ int main(int argc, char **argv)
                         SDL_Quit();
                         return 0;
                     }
+                        //TODO: play sound
                 }
             } break;
             case MODE_CLOCK: {
