@@ -64,6 +64,9 @@ cd $curdir
 chmod +x ./stream/install.sh
 sudo ./stream/install.sh
 
+chmod +x ./scripts/setdarktheme.sh
+./scripts/setdarktheme.sh
+
 cd ~/
 mkdir personal
 cd personal
