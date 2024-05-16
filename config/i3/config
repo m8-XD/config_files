@@ -176,6 +176,7 @@ exec --no-startup-id lxqt-policykit-agent &
 exec --no-startup-id picom --backend glx -b
 exec --no-startup-id nm-applet
 exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
+exec --no-startup-id moka
 
 
 bindsym $mod+Escape exec --no-startup-id i3lock -c 000000
@@ -211,3 +212,5 @@ exec_always --no-startup-id xrandr --output HDMI-A-0 --set TearFree on
 # run google calendar on starup
 assign [class="WebApp-Calendar2211" instance="calendar.google.com__calendar_u_1"] 9
 exec --no-startup-id google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
+
+exec kitty nvim ~/TODO
