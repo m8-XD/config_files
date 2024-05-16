@@ -177,7 +177,8 @@ exec --no-startup-id picom --backend glx -b
 exec --no-startup-id nm-applet
 exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:win_space_toggle"
 exec --no-startup-id moka
-
+exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
+exec_always for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Speed' 0.5; done
 
 bindsym $mod+Escape exec --no-startup-id i3lock -c 000000
 
@@ -212,5 +213,3 @@ exec_always --no-startup-id xrandr --output HDMI-A-0 --set TearFree on
 # run google calendar on starup
 assign [class="WebApp-Calendar2211" instance="calendar.google.com__calendar_u_1"] 9
 exec --no-startup-id google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
-
-exec kitty nvim ~/TODO
