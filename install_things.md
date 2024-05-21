@@ -15,8 +15,11 @@ sudo apt install gh
 ## wsl end
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit
+ripgrep gnome-keyring wl-clipboard xclip tlp pavucontrol \
+feh bat gimp make
+
+# i3 things
+sudo apt install grim slurp light picom maim lxappearance lxqt-policykit
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 
