@@ -2,10 +2,6 @@
 
 curdir=$(pwd)
 
-# Change Debian to SID Branch
-sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-sudo cp deb.sources.list /etc/apt/sources.list 
-
 sudo apt update
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
@@ -51,7 +47,6 @@ sudo usermod -aG video ${USER}
 cd ~/.config
 git clone https://github.com/ring0-rootkit/nvim
 
-sudo apt remove libreoffice-*
 sudo apt remove gnome-games
 sudo apt remove ibus
 sudo apt upgrade
@@ -63,9 +58,6 @@ sudo apt autoremove
 cd $curdir
 chmod +x ./stream/install.sh
 sudo ./stream/install.sh
-
-chmod +x ./scripts/setdarktheme.sh
-./scripts/setdarktheme.sh
 
 cd ~/
 mkdir personal

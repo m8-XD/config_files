@@ -16,10 +16,13 @@ sudo apt install gh
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
 ripgrep gnome-keyring wl-clipboard xclip tlp pavucontrol \
-feh bat gimp make
+feh bat gimp make curl gettext cmake unzip build-essential 
 
 # i3 things
-sudo apt install grim slurp light picom maim lxappearance lxqt-policykit
+sudo apt install grim slurp picom maim lxappearance lxqt-policykit \
+ninja-build lxappearance i3lock xautolock i3 xinput
+
+
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 
@@ -41,6 +44,8 @@ mkdir ~/.local/share/fonts/JetBrains
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 
 curl https://sh.rustup.rs -sSf | sh
+
+https://go.dev/doc/install
 
 # add this to your ~/.profile
 export PATH=$PATH:/usr/local/go/bin

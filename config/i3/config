@@ -187,7 +187,7 @@ bindsym $mod+shift+z exec --no-startup-id NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim
         --select > ~/Pictures/screenshot_$NOW.png && \
         xclip -selection clip -t image/png ~/Pictures/screenshot_$NOW.png
 
-bindsym $mod+Shift+s exec --no-startup-id chmod +x ~/.config/i3/bin/mirrormonitor && bash ~/.config/i3/bin/mirrormonitor
+bindsym $mod+Shift+s exec --no-startup-id chmod +x ~/.config/i3/bin/secondaryonly && ~/.config/i3/bin/secondaryonly
 bindsym $mod+Shift+d exec --no-startup-id chmod +x ~/.config/i3/bin/duomonitor && bash ~/.config/i3/bin/duomonitor
 bindsym $mod+Shift+a exec --no-startup-id chmod +x ~/.config/i3/bin/primaryonly && .config/i3/bin/primaryonly
 
@@ -211,5 +211,5 @@ exec_always --no-startup-id xrandr --output eDP --set TearFree on
 exec_always --no-startup-id xrandr --output HDMI-A-0 --set TearFree on
 
 # run google calendar on starup
-assign [class="WebApp-Calendar2211" instance="calendar.google.com__calendar_u_1"] 9
-exec --no-startup-id google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
+# assign [class="WebApp-Calendar2211" instance="calendar.google.com__calendar_u_1"] 9
+# exec --no-startup-id google-chrome-stable --new-window --app=https://calendar.google.com/calendar/u/1 --class=WebApp-Calendar2211
