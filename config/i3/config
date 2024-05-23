@@ -166,6 +166,14 @@ bar {
         status_command i3status -c ~/.config/i3/i3_status
         tray_output primary
         font pango:DejaVu Sans Mono 10
+        colors {
+            background #e6e9ef
+            statusline #000000
+            focused_workspace  #ffffff #7287fd
+            active_workspace   #ffffff #bcc0cc
+            inactive_workspace #ffffff #5c5f77
+            urgent_workspace   #ffffff #d20f39
+        }
 }
 
 # ------------------------------------------

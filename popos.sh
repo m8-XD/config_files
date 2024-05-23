@@ -67,3 +67,6 @@ cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
+git config --global user.name "ring0-rootkit"
+git config --global user.email "ord1naryman.dmitry@gmail.com"
+

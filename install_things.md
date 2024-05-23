@@ -20,7 +20,7 @@ feh bat gimp make curl gettext cmake unzip build-essential
 
 # i3 things
 sudo apt install grim slurp picom maim lxappearance lxqt-policykit \
-ninja-build lxappearance i3lock xautolock i3 xinput
+ninja-build lxappearance i3lock xautolock i3 xinput light
 
 
 
