@@ -13,6 +13,7 @@ set clipboard^=unnamedplus,unnamed
 Plug 'machakann/vim-highlightedyank'
 " Commentary plugin
 Plug 'tpope/vim-commentary'
+set NERDTree
 
 """ Plugins END
 
@@ -22,9 +23,13 @@ map <leader>z <Action>(ToggleDistractionFreeMode)
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
 
+" Easy visual indentation
+vnoremap < <gv
+noremap > >gv
+
 " Trident mappings
 map <leader>ja <Action>(TridentAppend)
-map <leader>je <Action>(TridentToggleQuickMenu)
+map <leader>je <Action>(TridentList)
 map <leader>js <Action>(TridentSelect1)
 map <leader>jd <Action>(TridentSelect2)
 map <leader>jf <Action>(TridentSelect3)
@@ -33,4 +38,7 @@ map <leader>jh <Action>(TridentSelect5)
 
 map , <Action>(TridentSelectPrev)
 map . <Action>(TridentSelectNext)
+
+" NERDTree mappings
+map <leader>e :NERDTreeToggle<CR>
 """ Maps END
