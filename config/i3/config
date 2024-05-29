@@ -20,7 +20,8 @@ font pango:monospace 15px
 # Thanks Childz
 for_window [class="^.*"] border pixel 1
 
-client.focused          #0062ff #0062ff #ffffff #0062ff   #0062ff
+# client.focused          #0062ff #0062ff #ffffff #0062ff   #0062ff
+client.focused          #ffc107 #ffc107 #000000 #ffc107   #ffc107
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
