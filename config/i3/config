@@ -19,8 +19,6 @@ font pango:monospace 15px
 #
 # Thanks Childz
 for_window [class="^.*"] border pixel 1
-                          # class                 border  backgr. text    indicator child_border
-for_window [class="^.*"] client.focused          #0062ff #0062ff #ffffff #2e9ef4   #0062ff
 
 client.focused          #0062ff #0062ff #ffffff #0062ff   #0062ff
 
