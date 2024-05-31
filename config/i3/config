@@ -20,8 +20,8 @@ font pango:monospace 15px
 # Thanks Childz
 for_window [class="^.*"] border pixel 1
 
-# client.focused          #0062ff #0062ff #ffffff #0062ff   #0062ff
 client.focused          #ffc107 #ffc107 #000000 #ffc107   #ffc107
+# client.focused          #0062ff #0062ff #ffffff #0062ff   #0062ff
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -167,14 +167,24 @@ bar {
         status_command i3status -c ~/.config/i3/i3_status
         tray_output primary
         font pango:DejaVu Sans Mono 10
+        # dark
         colors {
-            background #e6e9ef
-            statusline #000000
-            focused_workspace  #ffffff #7287fd
-            active_workspace   #ffffff #bcc0cc
-            inactive_workspace #ffffff #5c5f77
-            urgent_workspace   #ffffff #d20f39
+            background #1e1e2e
+            statusline #cdd6f4
+            focused_workspace  #000000 #74c7ec
+            active_workspace   #000000 #74c7ec
+            inactive_workspace #ffffff #585b70
+            urgent_workspace   #ffffff #f38ba8
         }
+        # light
+        # colors {
+        #     background #e6e9ef
+        #     statusline #000000
+        #     focused_workspace  #ffffff #7287fd
+        #     active_workspace   #ffffff #bcc0cc
+        #     inactive_workspace #ffffff #5c5f77
+        #     urgent_workspace   #ffffff #d20f39
+        # }
 }
 
 # ------------------------------------------
