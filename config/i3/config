@@ -169,12 +169,12 @@ bar {
         font pango:DejaVu Sans Mono 10
         # dark
         colors {
-            background #1e1e2e
-            statusline #cdd6f4
+            background #181818
+            statusline #E4E4E4
             focused_workspace  #000000 #74c7ec
-            active_workspace   #000000 #74c7ec
-            inactive_workspace #ffffff #585b70
-            urgent_workspace   #ffffff #f38ba8
+            active_workspace   #000000 #96A6C8
+            inactive_workspace #000000 #95A99F
+            urgent_workspace   #ffffff #F43841
         }
         # light
         # colors {
