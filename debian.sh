@@ -23,11 +23,16 @@ sudo tlp start
 # change jdk when new cool thingd come out
 sudo apt install openjdk-21-jdk docker-compose maven gradle
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+# wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
+# mkdir ~/.local/share/fonts 
+# mkdir ~/.local/share/fonts/JetBrains
+# unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
+# rm JetBrainsMono.zip
+wget https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip -O Hack.zip
 mkdir ~/.local/share/fonts 
-mkdir ~/.local/share/fonts/JetBrains
-unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
-rm JetBrainsMono.zip
+mkdir ~/.local/share/fonts/Hack
+unzip Hack.zip -d ~/.local/share/fonts/Hack
+rm Hack.zip
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
