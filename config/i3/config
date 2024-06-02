@@ -18,10 +18,13 @@ font pango:monospace 15px
 # GET DEM BORDERS OUT OF HEREc:w
 #
 # Thanks Childz
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 
-client.focused          #ffc107 #ffc107 #000000 #ffc107   #ffc107
-# client.focused          #0062ff #0062ff #ffffff #0062ff   #0062ff
+# purple
+client.focused          #8839f0 #8839f0 #000000 #8839f0   #8839f0
+# yelow
+# client.focused          #FFC107 #FFC107 #000000 #FFC107   #FFC107
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
