@@ -21,9 +21,9 @@ font pango:monospace 15px
 for_window [class="^.*"] border pixel 2
 
 # purple
-client.focused          #8839f0 #8839f0 #000000 #8839f0   #8839f0
+# client.focused          #8839f0 #8839f0 #000000 #8839f0   #8839f0
 # yelow
-# client.focused          #FFC107 #FFC107 #000000 #FFC107   #FFC107
+client.focused          #FFC107 #FFC107 #000000 #FFC107   #FFC107
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
