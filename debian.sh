@@ -75,5 +75,14 @@ cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 
+cd ~/personal
+ git clone git://git.sv.gnu.org/emacs.git
+ sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo autoconf
+ cd emacs
+ ./autogen.sh
+ ./configure --with-x-toolkit=gtk3
+ make -j8
+ sudo make install
+
 git config --global user.name "ring0-rootkit"
 git config --global user.email "ord1naryman.dmitry@gmail.com"
