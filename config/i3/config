@@ -18,7 +18,7 @@ font pango:monospace 15px
 # GET DEM BORDERS OUT OF HEREc:w
 #
 # Thanks Childz
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 # purple
 # client.focused          #8839f0 #8839f0 #000000 #8839f0   #8839f0
