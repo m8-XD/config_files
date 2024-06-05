@@ -29,6 +29,9 @@ mkdir ~/.local/share/fonts/JetBrains
 unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
 rm JetBrainsMono.zip
 
+cd ~/Downloads
+curl -s 'https://api.github.com/repos/be5invis/Iosevka/releases/latest' | jq -r ".assets[] | .browser_download_url" | grep PkgTTC-Iosevka | xargs -n 1 curl -L -O --fail --silent --show-error
+
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
