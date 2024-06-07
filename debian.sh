@@ -36,7 +36,7 @@ rm google-chrome-stable_current_amd64.deb
 curl https://sh.rustup.rs -sSf | sh
 
 # add this to your ~/.profile
-export PATH=$PATH:/usr/local/go/bin
+echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 
 sudo cp scripts/tmux_sessions /usr/bin
 cp config/i3/ ~/.config/ -r
