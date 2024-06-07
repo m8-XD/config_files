@@ -4,10 +4,10 @@ curdir=$(pwd)
 
 sudo apt update
 
-sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard xclip grim slurp \
-feh bat picom pavucontrol gimp maim make lxqt-policykit curl \
-ninja-build gettext cmake unzip build-essential xautolock \
+sudo apt install git gh kitty zsh tmux ripgrep npm gcc cargo fzf \
+wl-clipboard xclip \
+feh bat gimp make curl \
+ninja-build gettext cmake unzip build-essential \
 golang firefox nautilus wget
 
 
