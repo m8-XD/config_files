@@ -12,7 +12,7 @@ sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
 ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
 feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl \
 ninja-build gettext cmake unzip build-essential lxappearance i3lock xautolock \
-golang firefox nautilus i3 xinput
+golang firefox nautilus i3 xinput wget
 
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
@@ -74,15 +74,6 @@ git clone https://github.com/neovim/neovim
 cd neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
-
-cd ~/personal
- git clone git://git.sv.gnu.org/emacs.git
- sudo apt install build-essential libgtk-3-dev libgnutls28-dev libtiff5-dev libgif-dev libjpeg-dev libpng-dev libxpm-dev libncurses-dev texinfo autoconf
- cd emacs
- ./autogen.sh
- ./configure --with-x-toolkit=gtk3
- make -j8
- sudo make install
 
 git config --global user.name "ring0-rootkit"
 git config --global user.email "ord1naryman.dmitry@gmail.com"
