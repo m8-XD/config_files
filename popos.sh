@@ -5,16 +5,13 @@ curdir=$(pwd)
 sudo apt update
 
 sudo apt install git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl \
-ninja-build gettext cmake unzip build-essential lxappearance i3lock xautolock \
-golang firefox nautilus i3 xinput
+ripgrep gnome-keyring wl-clipboard xclip grim slurp \
+feh bat picom pavucontrol gimp maim make lxqt-policykit curl \
+ninja-build gettext cmake unzip build-essential xautolock \
+golang firefox nautilus wget
 
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
-
-sudo systemctl enable tlp
-sudo tlp start
 
 # change jdk when new cool thingd come out
 sudo apt install openjdk-21-jdk docker-compose maven gradle
@@ -35,20 +32,15 @@ curl https://sh.rustup.rs -sSf | sh
 export PATH=$PATH:/usr/local/go/bin
 
 sudo cp scripts/tmux_sessions /usr/bin
-cp config/i3/ ~/.config/ -r
 cp config/kitty/ ~/.config/ -r
 cp .tmux.conf  ~/
 cp .zshrc ~/
-
-chmod 777 ~/.config/i3/bin/*
 
 sudo usermod -aG video ${USER}
 
 cd ~/.config
 git clone https://github.com/ring0-rootkit/nvim
 
-sudo apt remove gnome-games
-sudo apt remove ibus
 sudo apt upgrade
 sudo apt full-upgrade
 sudo apt autoremove
