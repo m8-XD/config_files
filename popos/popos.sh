@@ -28,6 +28,9 @@ rm google-chrome-stable_current_amd64.deb
 
 curl https://sh.rustup.rs -sSf | sh
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install node
+
 # add this to your ~/.profile
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 
