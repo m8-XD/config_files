@@ -30,6 +30,15 @@ create_or_attach_session() {
     fi
 }
 
+fzf_session() {
+    TARGET_DIR=$(find ~/personal/ ~/work -mindepth 1 -maxdepth 1 | fzf)
+    SESSION_NAME=${TARGET_DIR##*/}
+    COMMAND="cd $TARGET_DIR"
+    tmux new-session -d -s "$SESSION_NAME"
+    tmux send-keys -t "$SESSION_NAME" "$COMMAND" Enter
+    tmux switch-client -t "$SESSION_NAME"
+}
+
 # Function to kill and potentially restart a tmux session
 kill_session() {
     session_name="$1"
@@ -47,11 +56,15 @@ elif [ "$1" = "k" ]; then
     kill_session "$2"
 elif [ "$1" = "l" ]; then
     tmux list-sessions
+elif [ "$1" = "f" ]; then
+    fzf_session
 else
     # If no valid arguments provided, display usage message
     echo "Usage: $0 [a|r|l] session_name"
     echo "  a: create or attach to session"
     echo "  k: kill session (optionally restart if inside)"
     echo "  l: list all sessions"
+    echo "  f: fzf in your ~/personal and ~/work dirs and attach to session with that dir"
 fi
+
 
