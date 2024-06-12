@@ -34,9 +34,19 @@ fzf_session() {
     TARGET_DIR=$(find ~/personal/ ~/work -mindepth 1 -maxdepth 1 | fzf)
     SESSION_NAME=${TARGET_DIR##*/}
     COMMAND="cd $TARGET_DIR"
-    tmux new-session -d -s "$SESSION_NAME"
-    tmux send-keys -t "$SESSION_NAME" "$COMMAND" Enter
-    tmux switch-client -t "$SESSION_NAME"
+
+    if [ -z "$SESSION_NAME" ]; then
+	    exit 0
+    fi
+
+    if tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
+        # If session exists, attach to it
+	attach_session "$SESSION_NAME"
+    else
+        tmux new-session -d -s "$SESSION_NAME"
+        tmux send-keys -t "$SESSION_NAME" "$COMMAND" Enter
+        tmux switch-client -t "$SESSION_NAME"
+    fi
 }
 
 # Function to kill and potentially restart a tmux session
