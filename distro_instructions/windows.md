@@ -11,3 +11,10 @@ Restart your computer
 
 
 https://windhawk.net/
+extensions:
+
+name : Taskbar height and icon size
+values : icon size -> 18 , taskbar height -> 34, taskbar butotn width -> 32
+
+name : Windows 11 Start Menu Styler
+values : side by side minimal
