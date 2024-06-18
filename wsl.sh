@@ -8,7 +8,7 @@ sudo cp deb.sources.list /etc/apt/sources.list
 
 sudo apt update
 
-sudo apt install git gh zsh tmux ripgrep npm gdu gcc cargo fzf \
+sudo apt install git gh zsh tmux ripgrep npm gdu gcc fzf \
 ripgrep bat make curl ninja-build gettext cmake unzip build-essential \
 golang wget man wsl
 
