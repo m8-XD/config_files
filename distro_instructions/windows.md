@@ -1,3 +1,19 @@
+# cursors
+https://github.com/imsir0vic/windows-cursors-modern/releases
+
+
+# Taskbar + start menu
+https://windhawk.net/
+
+extensions:
+
+name : Taskbar height and icon size
+values : icon size -> 18 , taskbar height -> 34, taskbar butotn width -> 32
+
+name : Windows 11 Start Menu Styler
+values : side by side minimal
+
+
 # ok u can have problem where after each restart UK layout appears in your layout options
 ## do this to dix it
 ```
@@ -8,13 +24,3 @@ On the bottom, Check both options "Welcome screen and system accounts" and "New 
 Click OK
 Restart your computer
 ```
-
-
-https://windhawk.net/
-extensions:
-
-name : Taskbar height and icon size
-values : icon size -> 18 , taskbar height -> 34, taskbar butotn width -> 32
-
-name : Windows 11 Start Menu Styler
-values : side by side minimal
