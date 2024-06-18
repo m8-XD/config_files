@@ -10,7 +10,7 @@ sudo apt update
 
 sudo apt install git gh zsh tmux ripgrep npm gdu gcc cargo fzf \
 ripgrep bat make curl ninja-build gettext cmake unzip build-essential \
-golang wget man
+golang wget man wsl
 
 
 sudo ln -s /usr/bin/batcat /usr/bin/bat
