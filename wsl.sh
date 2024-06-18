@@ -24,7 +24,7 @@ curl https://sh.rustup.rs -sSf | sh
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 
 sudo cp scripts/tmux_sessions /usr/bin
-cp .tmux.conf  ~/
+cp .tmux.conf_windows  ~/.tmux.conf
 cp .zshrc ~/
 
 chmod 777 ~/.config/i3/bin/*
