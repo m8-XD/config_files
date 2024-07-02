@@ -2,27 +2,32 @@
 
 curdir=$(pwd)
 
-pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
+read -r -p "Do you have yay? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY]) 
+	    echo If you lied, it\'s your fault
+        ;;
+    *)
+	    pacman -S --needed git base-devel
+	    git clone https://aur.archlinux.org/yay-bin.git
+	    cd yay-bin
+            makepkg -si
+        ;;
+esac
+
+
 
 sudo yay
 
-sudo yay -Sy git gh kitty zsh tmux ripgrep npm gdu gcc cargo fzf \
-ripgrep gnome-keyring wl-clipboard xclip light tlp pavucontrol grim slurp \
-feh bat picom pavucontrol gimp maim lxappearance make lxqt-policykit curl \
-ninja-build gettext cmake unzip build-essential lxappearance i3lock xautolock \
-golang firefox nautilus i3 xinput wget pulseaudio google-chrome
+sudo yay -Sy git github-cli kitty zsh tmux ripgrep npm gdu gcc fzf \
+ripgrep gnome-keyring wl-clipboard xclip \
+make lxqt-policykit curl \
+ninja-build gettext cmake unzip build-essential \
+golang firefox xinput wget ttf-jetbrains-mono-nerd \
+ninja go xorg-xinput
 
 # change jdk when new cool thingd come out
-sudo apt install openjdk-21-jdk docker-compose maven gradle
-
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
-mkdir ~/.local/share/fonts 
-mkdir ~/.local/share/fonts/JetBrains
-unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrains
-rm JetBrainsMono.zip
+sudo apt install jdk21-openjkd docker docker-compose maven gradle
 
 curl https://sh.rustup.rs -sSf | sh
 
@@ -36,8 +41,6 @@ cp .tmux.conf  ~/
 cp .zshrc ~/
 
 chmod 777 ~/.config/i3/bin/*
-
-sudo usermod -aG video ${USER}
 
 cd ~/.config
 git clone https://github.com/ring0-rootkit/nvim
